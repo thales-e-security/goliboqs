@@ -19,6 +19,7 @@ go:
   - 1.12.x
 
 before_script:
+  - ORIG_DIR=`pwd`
   - cd ~
   - git clone https://github.com/open-quantum-safe/liboqs.git
   - cd liboqs
@@ -29,4 +30,4 @@ before_script:
   - make clean
   - make -j
   - sudo make install
-
+  - cd $ORIG_DIR
