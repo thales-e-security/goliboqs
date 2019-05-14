@@ -19,7 +19,7 @@ go:
   - 1.12.x
 
 before_script:
-  - cd /
+  - cd ~
   - git clone https://github.com/open-quantum-safe/liboqs.git
   - cd liboqs
   # Test against master commit from 5 May 2019
@@ -28,5 +28,5 @@ before_script:
   - ./configure --prefix=/usr/local/liboqs
   - make clean
   - make -j
-  - make install
+  - sudo make install
 
