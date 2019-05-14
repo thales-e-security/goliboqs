@@ -1,4 +1,6 @@
 # goliboqs
+[![GoDoc](https://godoc.org/github.com/thales-e-security/goliboqs?status.svg)](https://godoc.org/github.com/thales-e-security/goliboqs)
+[![Build Status](https://travis-ci.com/thales-e-security/goliboqs.svg?branch=master)](https://travis-ci.com/thales-e-security/goliboqs)
 
 goliboqs is a Go wrapper for the [liboqs library](https://github.com/open-quantum-safe/liboqs). This enables Go
 applications to use post-quantum key encapsulation mechanisms (KEMs).
