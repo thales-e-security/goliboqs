@@ -2,8 +2,9 @@
 [![GoDoc](https://godoc.org/github.com/thales-e-security/goliboqs?status.svg)](https://godoc.org/github.com/thales-e-security/goliboqs)
 [![Build Status](https://travis-ci.com/thales-e-security/goliboqs.svg?branch=master)](https://travis-ci.com/thales-e-security/goliboqs)
 
-goliboqs is a Go wrapper for the [liboqs library](https://github.com/open-quantum-safe/liboqs). This enables Go
-applications to use post-quantum key encapsulation mechanisms (KEMs).
+goliboqs is a Go wrapper around [liboqs](https://github.com/open-quantum-safe/liboqs), which contains C implementations 
+of NIST post-quantum candidate algorithms.  This enables Go applications to use quantum-resistant key encapsulation 
+mechanisms (KEMs) on Linux.
   
 ## Usage
   
@@ -28,3 +29,8 @@ recoveredSecret, _ := kem.Decaps(ciphertext, secretKey)
 ## Running tests
 
 Tests assume liboqs has been installed into `/usr/local/liboqs`.
+
+## Related projects
+
+[go-tls-key-exchange](https://github.com/thales-e-security/go-tls-key-exchange) is a fork of Go that supports
+bespoke key exchanges for TLS 1.3. When combined with this project, it enables quantum-resistant TLS in Go.
